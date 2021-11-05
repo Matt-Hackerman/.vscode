@@ -1,0 +1,58 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+.flexbox-header{
+background-color: rgb(81, 81, 235);
+width: 100%;
+min-height: 100px;
+align-self: center;
+}
+
+
+.flexbox-hero{
+background-color: rgb(255, 47, 47);
+width: 75%;
+min-height: 200px;
+align-self: center;
+}
+
+
+.flexbox-content{
+background-color: lime;
+min-width: 50%;
+min-height: 420px;
+align-self: center;
+}
+
+
+.flexbox-sidebar{
+background-color: rgb(160, 17, 160);
+min-width: 25%;
+min-height: 420px;
+align-self: center;
+}
+
+
+.flexbox-footer{
+background-color: grey;
+width: 100%;
+min-height: 100px;
+align-self: center;
+}
+
+
+.flexbox-container{
+display: flex;
+justify-content: center;
+flex-direction: row;
+}
+
+
+.flexbox-container-1{
+display: flex;
+flex-direction: column;
+}

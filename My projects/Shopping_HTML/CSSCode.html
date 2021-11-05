@@ -1,0 +1,80 @@
+<html>
+    <head><title>Grocery List</title></head>
+    <Body>
+        <Button id="addItem" onclick="add(this)">Add an Item</Button><br>
+        <Button id="bought" onclick="boughtItems(this)">View Bought Items</Button><br>
+        <Button id="NotBought" onclick="notBoughtItem(this)">View Items Not yet bought</Button><br>
+        <div id="div"; style="align-content: center;">
+            <h3>List:</h3>
+        </div>
+        
+        <script>
+            
+            function strikeThrough(thing){
+                if(thing.value=='false'){
+                    let div=document.getElementById("div");
+                    var btn=document.getElementById(thing.id);
+                    btn.innerHTML=thing.id;
+                    let place=document.getElementById(thing.id);
+                    div.replaceChild(btn, place);
+                    console.log(thing.value);
+                    thing.value='true';
+                    console.log(thing.value);
+                    
+                }
+                else if(thing.value=='true'){
+                    let div=document.getElementById("div");
+                    var but=document.getElementById(thing.id);
+                    but.innerHTML='<strike>'+thing.id+'</strike>';
+                    console.log(thing.value);
+                    thing.value='false';
+                    console.log(thing.value);
+                    let place=document.getElementById(thing.id);
+                    div.replaceChild(but, place);
+                    
+                }
+            }
+            function add(){
+                let div=document.getElementById("div")
+                console.log("Hello")
+                var item=window.prompt("Enter an item you want to add");
+                let newBtn=document.createElement("BUTTON");
+                newBtn.innerHTML=item;
+                newBtn.setAttribute('id',item);
+                newBtn.setAttribute('onclick', "strikeThrough(this)");
+                newBtn.setAttribute('value', "true");
+                div.style.textAlign="center";
+                div.appendChild(newBtn);
+                
+            }
+            function boughtItems(thing){
+                    let heading=document.createElement("h3");
+                    let newSentence=document.createTextNode("Items Bought")
+                    heading.appendChild(newSentence)
+                    document.body.appendChild(heading)
+                for(let i=0;i<100;i++){
+                   if(document.body.getElementsByTagName("button")[i].value=='true'){
+                    let para=document.createElement("p")
+                    let k=document.createTextNode(document.body.getElementsByTagName("button")[i].id);
+                    para.appendChild(k)
+                    document.body.appendChild(para);
+                    }
+                }
+            }
+            function notBoughtItem(things){
+                    let heading=document.createElement("h3");
+                    let newSentence=document.createTextNode("Items Not Yet Bought")
+                    heading.appendChild(newSentence)
+                    document.body.appendChild(heading)
+                for(let i=0;i<100;i++){
+                    if(document.body.getElementsByTagName("button")[i].value=='false'){
+                    let para=document.createElement("p")
+                    let k=document.createTextNode(document.body.getElementsByTagName("button")[i].id);
+                    para.appendChild(k)
+                    document.body.appendChild(para);
+                    }
+                }
+            }
+        </script>
+    </Body>
+</html>

@@ -1,0 +1,1065 @@
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.6s;
+    padding: 30 20px;
+    border-bottom: 0.5px solid grey;
+    z-index: 100000;
+}
+
+header.sticky {
+    padding: 30 20px;
+    background: #fff;
+    border-bottom: none;
+    box-shadow: 1px 1px 1px 1px rgb(231, 231, 231);
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+    color: black;
+}
+
+header.sticky ul li a:hover {
+    color: orange;
+}
+
+header.sticky .nav-li-home{
+    color: orange;
+}
+
+header .logo {
+    font-family: "Open Sans";
+    position: relative;
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    text-transform: uppercase;
+    transition: 0.6s;
+    margin-right: 250px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+.nav-li {
+    font-family: "Open Sans";
+    font-weight: bolder;
+    font-size: 18px;
+    color: grey;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.nav-li:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-li-home {
+    font-family: "Open Sans";
+    font-weight: bolder;
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.nav-li-home:hover {
+    color: white;
+    text-decoration: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    transition: 0.6s;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(41, 50, 56, 0.9), rgba(41, 50, 56, 0.9)), url("images/hero_1.jpg");
+    background-size: cover;
+    background-position-y: 50%;
+}
+
+
+.header-content {
+    height: 70%;
+    width: 70%;
+    padding-top: 22%;
+    padding-left: 28%;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-family: "Playfair Display"
+}
+
+.header-p {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    padding-top: 20px;
+}
+
+.header-p-2 {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    padding-top: 8px;
+}
+
+
+.how-it-works {
+    background-color: whitesmoke;
+    height: 45%;
+    text-align: center;
+    color: orange;
+}
+
+
+.how-icons {
+    font-size: 40px;
+    color: orange;
+    margin-bottom: 20px;
+}
+
+
+.how-h1 {
+    font-size: 45px;
+    font-weight: lighter;
+    padding-top: 60px;
+}
+
+.how-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: grey;
+}
+
+
+.how-container {
+    display: flex;
+    justify-content: center;
+}
+
+.how-content-box {
+    height: 120px;
+    width: 500px;
+    color: black;
+    font-family: "Roboto";
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+.properties-li {
+    display: inline-block;
+    color: orange;
+    font-family: "Playfair Display";
+    font-size: 45px;
+    margin-left: 135px;
+    margin-right: 840px;
+}
+
+.slide-right {
+    color: black;
+    text-decoration: none;
+}
+
+.slide-left {
+    color: black;
+    text-decoration: none;
+}
+
+
+.prop-spacing {
+    padding-top: 70px;
+}
+
+
+.properties-scroll {
+    display: inline-block;
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.house-container {
+    display: flex;
+    justify-content: center;
+}
+
+.section-house {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.house-box-1 {
+    background-image: url(images/house1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+
+.house-box-2 {
+    background-image: url(images/house2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+
+.house-box-3 {
+    background-image: url(images/house3.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+
+.house-box-4 {
+    background-image: url(images/house4.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+
+
+#house-li-content-1 {
+    font-family: "Roboto";
+    font-weight: bolder;
+    font-size: 22px;
+    margin-left: 20px;
+    margin-top: 10px;
+    list-style: none;
+}
+
+#house-li-content-2 {
+    font-family: "Open Sans";
+    font-weight: 700;
+    color: grey;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 10px;
+    list-style: none;
+}
+
+
+.house-content {
+    margin-top: 470px;
+}
+
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.agent-box-layout {
+    display: flex;
+    justify-content: center;
+}
+
+.agent-box-layout-under {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 125px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.agent {
+    flex-direction: column;
+}
+
+.agent-box-tool {
+    width: 370px;
+    margin-right: 30px;
+}
+
+.agent-box-1 {
+    background-image: url(images/person_1.jpg);
+    background-size: cover;
+    height: 400px;
+}
+
+.agent-box-2 {
+    background-image: url(images/person_2.jpg);
+    background-size: cover;
+    height: 400px;
+}
+
+.agent-box-3 {
+    background-image: url(images/person_3.jpg);
+    background-size: cover;
+    height: 400px;
+}
+
+.agent-box-4 {
+    background-image: url(images/person_4.jpg);
+    background-size: cover;
+    height: 400px;
+    margin-top: 40px;
+}
+
+.agent-box-5 {
+    background-image: url(images/person_5.jpg);
+    background-size: cover;
+    height: 400px;
+    margin-top: 40px;
+}
+
+.agent-box-6 {
+    background-image: url(images/person_6.jpg);
+    background-size: cover;
+    height: 400px;
+    margin-top: 40px;
+}
+
+.agent-box-content {
+    height: 80px;
+    background-color: whitesmoke;
+}
+
+.agent-name {
+    font-family: "Playfair Display";
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 15px;
+    padding-top: 3px;
+    text-transform: capitalize;
+}
+
+.agent-bio {
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+    margin-left: 15px;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+
+
+.agent-h1 {
+    font-family: "Playfair Display";
+    font-size: 45px;
+    font-weight: 600;
+    color: orange;
+    margin-bottom: 10px;
+    margin-left: 160px;
+}
+
+.agent-p {
+    font-family: "Roboto";
+    font-weight: bolder;
+    font-size: 20px;
+    color: grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 160px;
+}
+
+
+.agent-p-2 {
+    font-family: "Roboto";
+    font-weight: bolder;
+    font-size: 20px;
+    color: grey;
+    margin-top: 10px;
+    margin-bottom: 70px;
+    margin-left: 160px;
+}
+
+
+.company-bio-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 125px;
+    padding-bottom: 135px;
+}
+
+.company-bio-image {
+    background-image: url(images/house1.jpg);
+    background-size: cover;
+    height: 930px;
+    width: 600px;
+}
+
+.company-bio-text {
+    height: 930px;
+    width: 490px;
+    margin-left: 140px;
+}
+
+.H-bio {
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-size: 40px;
+    color: orange;
+    margin-bottom: 17px;
+}
+
+.M-bio {
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 900;
+    color: grey;
+    margin-bottom: 10px;
+}
+
+.M-bio-2 {
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 900;
+    color: grey;
+    margin-bottom: 23px;
+}
+
+.E-bio {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 900;
+    color: grey;
+    margin-top: 10px;
+}
+
+.E-bio-2 {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 900;
+    color: grey;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.company-bio-li {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 900;
+    color: grey;
+    margin-top: 20px;
+}
+
+.company-bio-ul {
+    margin-left: 15px;
+}
+
+
+.shade {
+    background-color: whitesmoke;
+}
+
+
+.serv-h1 {
+    font-family: "Playfair Display";
+    font-size: 45px;
+    text-align: center;
+    color: orange;
+    background-color: whitesmoke;
+    padding-top: 125px;
+    padding-bottom: 50px; 
+}
+
+
+.service-box-layout {
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.service-box-container {
+    flex-direction: column;
+}
+
+.service-box-tool {
+    width: 350px;
+    overflow: hidden;
+    margin-right: 30px;
+}
+
+.service-box {
+    min-height: 200px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+.service-box-2 {
+    min-height: 200px;
+    margin-right: 40px;
+    padding-bottom: 125px;
+}
+
+
+.serv-icons {
+    font-size: 40px;
+    color: orange;
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 150px;
+}
+
+.serv-p {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 18px;
+    color: grey;
+    margin-top: 5px;
+}
+
+.serv-p-2 {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 18px;
+    color: orange;
+    margin-top: 25px;
+}
+
+.serv-h3 {
+    font-family: "Roboto";
+    font-weight: bolder;
+    font-size: 23px;
+    color: grey;
+    margin-bottom: 10px;
+}
+
+.serv {
+    color: orange;
+    text-decoration: none;
+}
+
+.serv:hover {
+    color: orange;
+    text-decoration-line: underline;
+}
+
+
+.info-h {
+    font-family: "Playfair Display";
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    color: orange;
+    padding-top: 125px;
+    padding-bottom: 50px; 
+}
+
+
+.info-sec {
+    margin-left: 22%;
+    margin-right: 22%;
+}
+
+
+.info-box-container {
+    width: 800px;
+    height: 350px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.info-box {
+    width: 800px;
+    height: 350px;
+    text-align: center;
+}
+
+.info-text {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 25px;
+    color: grey;
+    font-style: italic;
+}
+
+.arr-right {
+font-size: 35px;
+font-weight: bolder;
+text-decoration: none;
+color: black;
+padding-left: 750px;
+}
+
+.arr-left {
+font-size: 35px;
+font-weight: bolder;
+text-decoration: none;
+color: black;
+}
+
+.info-ul li{
+    font-family: "Roboto";
+    position: relative;
+    bottom: 400px;
+    display: inline-block;
+    list-style: none;
+}
+
+.avatar-name {
+    float: left;
+    font-family: "Open Sans";
+    font-weight: 700;
+    color: grey;
+    text-transform: capitalize;
+    padding-top: 68px;
+    margin-left: 20px;
+}
+
+.avatar-1 {
+    float: left;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-image: url(images/person_7.jpg);
+    background-size: cover;
+    margin-left: 37%;
+    margin-top: 50px;
+}
+
+.avatar-2 {
+    float: left;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-image: url(images/person_5.jpg);
+    background-size: cover;
+    margin-left: 37%;
+    margin-top: 50px;
+}
+
+.avatar-3 {
+    float: left;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-image: url(images/person_8.jpg);
+    background-size: cover;
+    margin-left: 37%;
+    margin-top: 50px;
+}
+
+
+.email-box-conainer {
+    display: flex;
+    justify-content: center;
+}
+
+.email-box {
+    width: 700px;
+    height: 750px;
+    background-color: white;
+    margin-bottom: 125px;
+}
+
+.phone-num-box {
+    width: 450px;
+    height: 300px;
+    background-color: white;
+    margin-left: 50px;
+}
+
+.phone-num-h {
+    font-family: "Open Sans";
+    font-weight: bolder;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: rgb(104, 103, 103);
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.phone-num-p {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 15px;
+    color: grey;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+.phone-num {
+    font-family: "Open Sans";
+    font-weight: bold;
+    margin-left: 30px;
+    color: orange;
+    text-decoration: none;
+}
+
+.phone-num:hover {
+    color: orange;
+    text-decoration-line: underline;
+}
+
+.email-text {
+    font-family: "Open Sans";
+    font-weight: bold;
+    margin-left: 30px;
+    color: orange;
+    text-decoration: none;
+}
+
+.email-text:hover {
+    color: orange;
+    text-decoration-line: underline;
+}
+
+.email-h {
+    font-family: "Playfair Display";
+    font-weight: lighter;
+    font-size: 23px;
+    text-transform: capitalize;
+    margin-left: 45px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.email-p {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 17px;
+    text-transform: capitalize;
+    margin-left: 45px;
+}
+
+.email-imput-box {
+    height: 40px;
+    width: 87%;
+    margin-top: 5px;
+    margin-left: 45px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    border: 1px solid lightgrey;
+}
+
+.email-msg-box {
+    height: 190px;
+    width: 87%;
+    margin-top: 5px;
+    margin-left: 45px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 1px solid lightgrey;
+}
+
+.msg-here {
+    font-family: "Roboto";
+    font-weight: bolder;
+    font-size: 15px;
+    color: #404040;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+.footer {
+    background-color: rgba(41, 41, 41, 0.9);
+    height: 620px;
+}
+
+.footer-bottom {
+    width: 1180px;
+    height: 200px;
+    border-top: 1px solid grey;
+    font-family: "Open Sans";
+    font-weight: bolder;
+    font-size: 15px;
+    text-align: center;
+    color: grey;
+    margin: auto;
+    justify-content: center;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-box-1 {
+    width: 400px;
+    height: 415px;
+    margin-right: 130px;
+}
+
+.footer-h {
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-size: 17px;
+    text-transform: capitalize;
+    color: white;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    padding-top: 130px;
+}
+
+.footer-h-box-3 {
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+    margin-left: 45px;
+    margin-bottom: 20px;
+    padding-top: 130px;
+}
+
+.footer-h-box-under {
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-size: 17px;
+    text-transform: capitalize;
+    color: white;
+    margin-left: 45px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.footer-p {
+    font-family: "Open Sans";
+    font-weight: bolder;
+    font-size: 16px;
+    color: grey;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.footer-box-2 {
+    width: 150px;
+    height: 415px;
+}
+
+.footer-links {
+    font-family: "Open Sans";
+    font-weight: bolder;
+    font-size: 16px;
+    color: grey;
+    margin-left: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+
+.footer-ls {
+    padding-bottom: 15px;
+}
+
+.footer-links:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-box-3 {
+    width: 500px;
+    height: 415px;
+}
+
+.footer-icons {
+    font-size: 20px;
+    color: grey;
+    text-decoration: none;
+    margin-right: 30px;
+    transition: 1.5s;
+}
+
+.footer-icons-str {
+    font-size: 20px;
+    color: grey;
+    text-decoration: none;
+    margin-right: 30px;
+    margin-left: 42px;
+    transition: 1.5s;
+}
+
+.footer-icons:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-icons-str:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-imput-container {
+    display: flex;
+}
+
+.footer-imput-box {
+    width: 320px;
+    height: 40px;
+    border: 0.5px solid lightblue;
+    background-color: #404040;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-left: 45px;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    color: white;
+}
+
+
+.btn-box {
+    width: 500px;
+    height: 550px;
+    text-align: center;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 15px 100px;
+    margin-top: 80%;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+}
+
+
+.btn-half {
+    font-family: "Open Sans";
+    font-weight: bolder;
+    display: inline-block;
+    padding: 8px 25px;
+    font-weight: 300;
+    text-decoration: none;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    transition: 0.3s;
+}
+
+.btn-half:hover {
+    background-color: white;
+    border-color: white;
+}
+
+.btn-comp-bio {
+    font-family: "Open Sans";
+    font-weight: bolder;
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 20%;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+}
+
+
+.btn-email {
+    font-family: "Open Sans";
+    font-weight: bolder;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 10px;
+    margin-left: 45px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+}
+
+
+.btn-full {
+    background-color: orange;
+    border: 1px solid orange;
+    color: #fff;
+}
+
+.half-btn-full {
+    background-color: orange;
+    border: 1px solid orange;
+    color: black;
+}
+
+
+#small {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+
+body {
+    font-family: "Roboto", "Open Sans", "Sans-serif";
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #777;
+    line-height: 1.7;
+    }
+
+
+h1, h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
+    }
+
+
+h5 {
+    font-size: 1rem;
+    font-family: "Playfair Display", serif;
+    }
+
+
+footer .footer-subscribe input {
+    border-radius: 30px;
+    height: 43px;
+    font-family: "Roboto", "Open Sans", "Sans-serif";
+    border: 1px solid #6c757d;
+    background-color: transparent;
+    font-size: 1rem;
+    padding: 10px;
+    color: #fff;
+    box-sizing: border-box;
+    width: 80px;
+    }

@@ -1,0 +1,137 @@
+<html>
+<div>
+  <head>
+    <body>
+    <meta name="Bulldog" content="width=device-width, initial-scale=1">
+    <style>
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    </style>
+    </body>
+  </head>
+</div>
+<div>
+<body>
+  <head>
+    <style>
+    h1 {text-align: center;}
+    </style>
+    </head>
+</body>
+  <title>Thaddeus Stevens Store</title>
+  <img src="C:\Users\David\Desktop\CSET 105\Html practice\CSET 105 Project 1\bulldog.jpg" alt="Bulldog" style="width:30%;">
+  <body style="background-color:rgb(238, 48, 48);">
+  <h1 style="color:white">Welcome to the Thadeus Stevens Grocery store</h1>
+  </body>
+</div>
+
+<div>
+<img src="C:\Users\David\Desktop\CSET 105\Html practice\CSET 105 Project 1\cart-removebg-preview.png" align="left">
+</div>
+
+<div>
+<h2 style="color:white">Thadeus Stevens Shopping Cart</h2>
+<style>
+
+</style>
+
+<style>
+
+</style>
+
+</div>
+<div>
+  <body>
+
+  <button type="button" onclick="alert('Your Order Has Been Placed')">Check out!</button>
+
+  </body>
+
+</div>
+
+    <Body>
+        <Button id="addItem" onclick="add(this)">Add an Item</Button><br>
+        <Button id="bought" onclick="boughtItems(this)">View Bought Items</Button><br>
+        <Button id="NotBought" onclick="notBoughtItem(this)">View Items Not yet bought</Button><br>
+        <div id="div", style="text-align: center;">
+            <h3>List:</h3>
+        </div>
+        <div id="ListedItems">
+
+        </div>
+        
+        <script>
+            //fucntion to make the items have a strike through them when clicked
+            function strikeThrough(thing){
+                if(thing.value=='false'){
+                    let div=document.getElementById("div");
+                    var btn=document.getElementById(thing.id);
+                    btn.innerHTML=thing.id;
+                    let place=document.getElementById(thing.id);
+                    div.replaceChild(btn, place);
+                    console.log(thing.value);
+                    thing.value='true';
+                    console.log(thing.value);
+                    
+                }
+                else if(thing.value=='true'){
+                    let div=document.getElementById("div");
+                    var but=document.getElementById(thing.id);
+                    but.innerHTML='<strike>'+thing.id+'</strike>';
+                    console.log(thing.value);
+                    thing.value='false';
+                    console.log(thing.value);
+                    let place=document.getElementById(thing.id);
+                    div.replaceChild(but, place);
+                    
+                }
+            }
+            //function to add an item to the list
+            function add(){
+                let div=document.getElementById("div")
+                console.log("Hello")
+                var item=window.prompt("Enter an item you want to add");
+                let newBtn=document.createElement("BUTTON");
+                newBtn.innerHTML=item;
+                newBtn.setAttribute('id',item);
+                newBtn.setAttribute('onclick', "strikeThrough(this)");
+                newBtn.setAttribute('value', "true");
+                div.appendChild(newBtn);
+                
+            }
+            //function to see what Items you already bought
+            function boughtItems(thing){
+                    let heading=document.createElement("h3");
+                    let newSentence=document.createTextNode("Items Bought")
+                    heading.appendChild(newSentence)
+                    document.body.appendChild(heading)
+                for(let i=0;i<100;i++){
+                   if(document.body.getElementsByTagName("button")[i].value=='false'){
+                    let para=document.createElement("p")
+                    let k=document.createTextNode(document.body.getElementsByTagName("button")[i].id);
+                    para.appendChild(k)
+                    document.body.appendChild(para);
+                    }
+                }
+            }
+            //function to print items that have not been bought
+            function notBoughtItem(things){
+                    let heading=document.createElement("h3");
+                    let newSentence=document.createTextNode("Items Not Yet Bought")
+                    heading.appendChild(newSentence)
+                    document.body.appendChild(heading)
+                for(let i=0;i<100;i++){
+                    if(document.body.getElementsByTagName("button")[i].value=='true'){
+                    let para=document.createElement("p")
+                    let k=document.createTextNode(document.body.getElementsByTagName("button")[i].id);
+                    para.appendChild(k)
+                    document.body.appendChild(para);
+                    }
+                }
+            }
+        </script>
+    </Body>
+</html>
